@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Segundo parcial</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Echo tech</div>
+        <div class="dropdown">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="">cars</a>
+                </li>
+                <li>
+                    <a href="">Scooter</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="introduction">
+        <h1>ECHO<span class="title-sec"> TECH</span></h1>
+        <div class="subtitle">Una empresa comprometida con el medio ambiente</div>
+
+        <div class="form-popup" id="myForm">
+            <section id="formulario">
+                <input class="campos" type="text" name="nombres" id="nombres" placeholder="Enter name" required>
+                <input class="campos" type="text" name="apellidos" id="apellidos" placeholder="Enter last name" required>
+                <input class="campos" type="email" name="correo" id="correo" placeholder="Enter email" required>
+                <input class="campos" type="date" name="fecha" id="fecha" placeholder="Seleccione la fecha de arriendo required">
+                <p>I agree with <a href="#">Terms and conditions</a></p>
+                <form>
+                  <input class="boton-form" type="submit" value="Reservar">
+                </form>
+                <p><a href="#">Don't have an account?</a></p>
+                <button type="button" class="btn-cancel" onclick="closeForm()">Cerrar</button>
+            </section>
+          </div>
+    </section>
+    <section class="section-cars">
+        <h2>Carros</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="/images/car-img.jpg" alt="vehiculo 1">
+                <div class="content">
+                    <h3>Vehiculo 1</h3>
+                    <p>Descripcion del vehiculo</p>
+                    <button class="open-button" onclick="openForm()">reserva</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="/images/car-img.jpg" alt="vehiculo 2">
+                <div class="content">
+                    <h3>Vehiculo 2</h3>
+                    <p>Descripcion del vehiculo</p>
+                    <button class="open-button" onclick="openForm()">reserva</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="/images/car-img.jpg" alt="vehiculo 3">
+                <div class="content">
+                    <h3>Vehiculo 3</h3>
+                    <p>Descripcion del vehiculo</p>
+                    <button class="open-button" onclick="openForm()">reserva</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="/images/car-img.jpg" alt="vehiculo 4">
+                <div class="content">
+                    <h3>Vehiculo 4</h3>
+                    <p>Descripcion del vehiculo</p>
+                    <button class="open-button" onclick="openForm()">reserva</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-scooters">
+        <h2>Scooters</h2>
+    <div class="card-container">
+            <div class="card">
+                <img src="/images/scooter-img.jpeg" alt="scooter 1">
+                <div class="content">
+                    <h3>Scooter 1</h3>
+                    <p>Descripcion del vehiculo</p>
+                    <button class="open-button" onclick="openForm()">reserva</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="/images/scooter-img.jpeg" alt="scooter 2">
+                <div class="content">
+                    <h3>Scooter 2</h3>
+                    <p>Descripcion del vehiculo</p>
+                    <button class="open-button" onclick="openForm()">reserva</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="/images/scooter-img.jpeg" alt="scooter 3">
+                <div class="content">
+                    <h3>Scooter 3</h3>
+                    <p>Descripcion del vehiculo</p>
+                    <button class="open-button" onclick="openForm()">reserva</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="/images/scooter-img.jpeg" alt="scooter 4">
+                <div class="content">
+                    <h3>Scooter 4</h3>
+                    <p>Descripcion del vehiculo</p>
+                    <button class="open-button" onclick="openForm()">reserva</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        dropdown = document.querySelector('.dropdown')
+        dropdown.onclick = function() {
+            navBar=document.querySelector('.nav-bar')
+            navBar.classList.toggle('active')
+        }
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>
